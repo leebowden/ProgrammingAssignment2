@@ -32,8 +32,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## This function computes the inverse of the "matrix" returned by the 
 ## first function. If the inverse has already been calculated and the 
 ## matrix has not changed the function will retrieve the inverse from 
-## the cache directly. Otherwise, it calculates the mean of the data 
-## and sets the value of the mean in the cache via the setmean function.
+## the cache directly. Otherwise, it calculates the inverse of the matrix 
+## and sets the value of the matrix in the cache via the setinverse function.
 
 cacheSolve <- function(x, ...) {
   i <- x$getinverse()
